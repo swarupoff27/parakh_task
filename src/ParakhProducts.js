@@ -36,7 +36,7 @@ function ParakhProducts() {
 
   const cart = []
 
-  const resume = data.map((data) => {
+  const sections = data.map((data) => {
 
     function handleAddToCart(e){
       const item = e.target.previousSibling.previousSibling.childNodes[1].innerHTML
@@ -79,7 +79,7 @@ function ParakhProducts() {
     );
   });
 
-  return <div>{<React.Fragment>{resume}</React.Fragment>}</div>;
+  return <div>{<React.Fragment>{sections}</React.Fragment>}</div>;
 }
 
 export default ParakhProducts;
